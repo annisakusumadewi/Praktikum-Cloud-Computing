@@ -1,0 +1,781 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Materi praktikum Cloud Computing tentang Platform as a Service (PaaS)">
+    <title>Materi Cloud Computing | PaaS</title>
+    <link rel="stylesheet" href="gaya.css">
+    <script src="script_js.js" defer></script>
+</head>
+<body>
+
+    <!-- IDENTITAS KELOMPOK: BAGIAN PALING ATAS -->
+    <header class="top-header">
+        <div class="container">
+            <div class="group-heading">
+                <div class="group-icon">👥</div>
+                <div>
+                    <span class="small-label">IDENTITAS KELOMPOK</span>
+                    <h2>Kelompok Praktikum Cloud Computing</h2>
+                </div>
+            </div>
+
+            <div class="members">
+                <article class="member">
+                    <div class="member-avatar">SK</div>
+                    <div>
+                        <h3>Santi Kurniawati</h3>
+                        <p>23104410059</p>
+                    </div>
+                </article>
+
+                <article class="member">
+                    <div class="member-avatar">DW</div>
+                    <div>
+                        <h3>Desi Widyawati</h3>
+                        <p>23104410090</p>
+                    </div>
+                </article>
+
+                <article class="member">
+                    <div class="member-avatar">AK</div>
+                    <div>
+                        <h3>Annisa Kusuma Dewi</h3>
+                        <p>23104410100</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGASI -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#beranda" class="brand">
+                <span class="brand-icon">☁</span>
+                <span>Cloud<span class="brand-highlight">Learn</span></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Buka menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#beranda">Beranda</a>
+                <a href="#pengertian">Pengertian</a>
+                <a href="#karakteristik">Karakteristik</a>
+                <a href="#cara-kerja">Cara Kerja</a>
+                <a href="#perbandingan">Perbandingan</a>
+                <a href="#kesimpulan">Kesimpulan</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- PEMBUKA MATERI -->
+        <section class="hero" id="beranda">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="eyebrow">MATERI PRAKTIKUM</span>
+
+                    <h1>
+                        Platform as a<br>
+                        <span>Service (PaaS)</span>
+                    </h1>
+
+                    <p>
+                        Memahami salah satu model layanan cloud computing
+                        yang memudahkan pengembang dalam membuat, menguji,
+                        menjalankan, dan mengelola aplikasi melalui platform
+                        berbasis cloud.
+                    </p>
+
+                    <a href="#pengertian" class="btn">
+                        Pelajari Materi <span>→</span>
+                    </a>
+
+                    <div class="hero-caption">
+                        <span class="status-dot"></span>
+                        Cloud Computing Learning Material
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <div class="cloud-card">
+                        <div class="cloud-emoji">☁️</div>
+                        <h3>Platform as a Service</h3>
+                        <p>Develop · Test · Deploy</p>
+
+                        <div class="mini-tags">
+                            <span>Cloud</span>
+                            <span>Application</span>
+                            <span>Platform</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-top">
+                        <span>💻</span>
+                        <div>
+                            <strong>Development</strong>
+                            <small>Pengembangan aplikasi</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-bottom">
+                        <span>🚀</span>
+                        <div>
+                            <strong>Deployment</strong>
+                            <small>Penerapan aplikasi</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RINGKASAN MATERI -->
+        <section class="overview container">
+            <article class="overview-card">
+                <div class="overview-icon purple">☁</div>
+                <div>
+                    <h3>Cloud Platform</h3>
+                    <p>Lingkungan pengembangan berbasis cloud.</p>
+                </div>
+            </article>
+
+            <article class="overview-card">
+                <div class="overview-icon blue">⚙</div>
+                <div>
+                    <h3>Development</h3>
+                    <p>Mempermudah proses pengembangan aplikasi.</p>
+                </div>
+            </article>
+
+            <article class="overview-card">
+                <div class="overview-icon green">↗</div>
+                <div>
+                    <h3>Deployment</h3>
+                    <p>Mendukung penerapan aplikasi ke cloud.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- DAFTAR ISI -->
+        <section class="section container" id="daftar-isi">
+            <div class="section-heading">
+                <span class="section-label">PETA PEMBELAJARAN</span>
+                <h2>Daftar Isi Materi</h2>
+                <p>Pilih bagian yang ingin dipelajari.</p>
+            </div>
+
+            <div class="contents-grid">
+                <a href="#pengertian" class="contents-card">
+                    <span>01</span>
+                    <div>
+                        <h3>Pengertian PaaS</h3>
+                        <p>Konsep dasar Platform as a Service.</p>
+                    </div>
+                    <b>→</b>
+                </a>
+
+                <a href="#karakteristik" class="contents-card">
+                    <span>02</span>
+                    <div>
+                        <h3>Karakteristik PaaS</h3>
+                        <p>Ciri dan komponen utama layanan.</p>
+                    </div>
+                    <b>→</b>
+                </a>
+
+                <a href="#cara-kerja" class="contents-card">
+                    <span>03</span>
+                    <div>
+                        <h3>Cara Kerja PaaS</h3>
+                        <p>Alur pengembangan hingga deployment.</p>
+                    </div>
+                    <b>→</b>
+                </a>
+
+                <a href="#kelebihan" class="contents-card">
+                    <span>04</span>
+                    <div>
+                        <h3>Kelebihan dan Kekurangan</h3>
+                        <p>Manfaat dan hal yang perlu diperhatikan.</p>
+                    </div>
+                    <b>→</b>
+                </a>
+
+                <a href="#perbandingan" class="contents-card">
+                    <span>05</span>
+                    <div>
+                        <h3>IaaS, PaaS, dan SaaS</h3>
+                        <p>Perbedaan tiga model layanan cloud.</p>
+                    </div>
+                    <b>→</b>
+                </a>
+
+                <a href="#contoh" class="contents-card">
+                    <span>06</span>
+                    <div>
+                        <h3>Contoh Platform PaaS</h3>
+                        <p>Mengenal layanan yang tersedia.</p>
+                    </div>
+                    <b>→</b>
+                </a>
+            </div>
+        </section>
+
+        <!-- 1. PENGERTIAN -->
+        <section class="section section-soft" id="pengertian">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">01 — KONSEP DASAR</span>
+                    <h2>Pengertian Platform as a Service</h2>
+                    <p>Memahami apa itu PaaS dan tujuan penggunaannya.</p>
+                </div>
+
+                <div class="article-grid">
+                    <article class="article-card">
+                        <div class="article-icon">📘</div>
+                        <h3>Apa itu PaaS?</h3>
+
+                        <p>
+                            <strong>Platform as a Service (PaaS)</strong>
+                            adalah model layanan cloud computing yang
+                            menyediakan platform untuk mengembangkan,
+                            menguji, menjalankan, dan mengelola aplikasi.
+                            Penyedia layanan menangani infrastruktur dasar
+                            seperti server, penyimpanan, jaringan, dan
+                            lingkungan runtime sesuai layanan yang digunakan.
+                        </p>
+
+                        <p>
+                            Dengan PaaS, pengembang dapat lebih fokus pada
+                            pembuatan kode program dan fitur aplikasi tanpa
+                            harus mengatur seluruh infrastruktur dari awal.
+                        </p>
+                    </article>
+
+                    <aside class="highlight-card">
+                        <span class="highlight-icon">💡</span>
+                        <h3>Inti dari PaaS</h3>
+                        <p>
+                            Developer berfokus pada pengembangan aplikasi,
+                            sedangkan penyedia cloud mengelola sebagian besar
+                            infrastruktur dan platform pendukungnya.
+                        </p>
+
+                        <div class="highlight-divider"></div>
+
+                        <p class="highlight-small">
+                            Contoh sederhana: developer membuat website,
+                            lalu menggunakan platform cloud untuk
+                            menjalankan website tersebut secara online.
+                        </p>
+                    </aside>
+                </div>
+
+                <div class="definition-strip">
+                    <span class="strip-icon">🎯</span>
+                    <div>
+                        <h3>Tujuan PaaS</h3>
+                        <p>
+                            Menyediakan lingkungan pengembangan yang praktis
+                            agar proses pembuatan, pengujian, dan penerapan
+                            aplikasi dapat dilakukan dengan lebih efisien.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. KARAKTERISTIK -->
+        <section class="section container" id="karakteristik">
+            <div class="section-heading">
+                <span class="section-label">02 — CIRI UTAMA</span>
+                <h2>Karakteristik PaaS</h2>
+                <p>
+                    PaaS memiliki sejumlah karakteristik yang membedakannya
+                    dari pengelolaan server secara mandiri.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="feature-icon purple">🛠️</div>
+                    <h3>Lingkungan Pengembangan</h3>
+                    <p>
+                        Menyediakan lingkungan untuk menulis, membangun,
+                        dan menguji aplikasi.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon blue">☁️</div>
+                    <h3>Berbasis Cloud</h3>
+                    <p>
+                        Platform diakses melalui layanan cloud sesuai
+                        mekanisme dan kebutuhan penyedia.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon green">⚙️</div>
+                    <h3>Pengelolaan Infrastruktur</h3>
+                    <p>
+                        Penyedia menangani infrastruktur dasar dan
+                        pemeliharaan platform sesuai cakupan layanan.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon orange">📈</div>
+                    <h3>Skalabilitas</h3>
+                    <p>
+                        Kapasitas layanan dapat disesuaikan dengan
+                        kebutuhan aplikasi dan kemampuan platform.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon pink">🤝</div>
+                    <h3>Kolaborasi</h3>
+                    <p>
+                        Mendukung kerja tim dalam proses pengembangan
+                        dan pengelolaan aplikasi.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon cyan">🚀</div>
+                    <h3>Deployment</h3>
+                    <p>
+                        Menyediakan mekanisme untuk menerapkan aplikasi
+                        agar dapat digunakan oleh pengguna.
+                    </p>
+                </article>
+            </div>
+
+            <div class="note-card">
+                <strong>Catatan:</strong>
+                Fitur yang tersedia tidak selalu sama pada setiap platform
+                PaaS. Pengguna tetap perlu memperhatikan konfigurasi,
+                keamanan aplikasi, pengelolaan data, dan batas layanan.
+            </div>
+        </section>
+
+        <!-- 3. CARA KERJA -->
+        <section class="section section-soft" id="cara-kerja">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">03 — ALUR PROSES</span>
+                    <h2>Bagaimana PaaS Bekerja?</h2>
+                    <p>
+                        PaaS membantu pengembang melalui tahapan
+                        pengembangan hingga aplikasi dijalankan.
+                    </p>
+                </div>
+
+                <div class="workflow">
+                    <article class="workflow-card">
+                        <div class="workflow-number">01</div>
+                        <div class="workflow-icon">⌨️</div>
+                        <h3>Mengembangkan</h3>
+                        <p>
+                            Developer menulis kode program dan
+                            menyiapkan aplikasi.
+                        </p>
+                    </article>
+
+                    <div class="workflow-arrow">→</div>
+
+                    <article class="workflow-card">
+                        <div class="workflow-number">02</div>
+                        <div class="workflow-icon">🧪</div>
+                        <h3>Menguji</h3>
+                        <p>
+                            Aplikasi diperiksa untuk menemukan
+                            kesalahan dan memastikan fungsinya.
+                        </p>
+                    </article>
+
+                    <div class="workflow-arrow">→</div>
+
+                    <article class="workflow-card">
+                        <div class="workflow-number">03</div>
+                        <div class="workflow-icon">☁️</div>
+                        <h3>Menerapkan</h3>
+                        <p>
+                            Aplikasi di-deploy ke platform cloud
+                            sesuai konfigurasi yang dibutuhkan.
+                        </p>
+                    </article>
+
+                    <div class="workflow-arrow">→</div>
+
+                    <article class="workflow-card">
+                        <div class="workflow-number">04</div>
+                        <div class="workflow-icon">📊</div>
+                        <h3>Memantau</h3>
+                        <p>
+                            Developer memeriksa kinerja aplikasi
+                            dan memperbaikinya jika diperlukan.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="example-box">
+                    <div class="example-icon">💻</div>
+                    <div>
+                        <h3>Contoh dalam Praktikum</h3>
+                        <p>
+                            Mahasiswa membuat website menggunakan HTML,
+                            CSS, dan JavaScript di Visual Studio Code.
+                            Setelah diuji secara lokal, website dapat
+                            diterapkan ke layanan hosting cloud yang sesuai.
+                            Pengguna kemudian membuka website melalui URL
+                            yang diberikan oleh layanan tersebut.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. KELEBIHAN DAN KEKURANGAN -->
+        <section class="section container" id="kelebihan">
+            <div class="section-heading">
+                <span class="section-label">04 — ANALISIS LAYANAN</span>
+                <h2>Kelebihan dan Kekurangan PaaS</h2>
+                <p>
+                    Penggunaan PaaS memberikan kemudahan, tetapi juga
+                    memiliki beberapa hal yang perlu dipertimbangkan.
+                </p>
+            </div>
+
+            <div class="pros-cons">
+                <article class="comparison-card pros-card">
+                    <div class="comparison-heading">
+                        <span class="comparison-icon">✓</span>
+                        <h3>Kelebihan PaaS</h3>
+                    </div>
+
+                    <ul class="detail-list">
+                        <li>
+                            <strong>Lebih praktis</strong>
+                            <p>
+                                Developer tidak perlu mengelola seluruh
+                                infrastruktur dari awal.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Menghemat waktu</strong>
+                            <p>
+                                Proses pengembangan dan deployment
+                                dapat menjadi lebih cepat.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Mudah dikembangkan</strong>
+                            <p>
+                                Fitur aplikasi dapat dikembangkan
+                                tanpa harus membangun seluruh platform.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Mendukung skalabilitas</strong>
+                            <p>
+                                Kapasitas dapat disesuaikan jika
+                                layanan mendukung kebutuhan tersebut.
+                            </p>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="comparison-card cons-card">
+                    <div class="comparison-heading">
+                        <span class="comparison-icon">!</span>
+                        <h3>Kekurangan PaaS</h3>
+                    </div>
+
+                    <ul class="detail-list">
+                        <li>
+                            <strong>Ketergantungan penyedia</strong>
+                            <p>
+                                Aplikasi dapat bergantung pada fitur
+                                dan teknologi platform tertentu.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Kontrol infrastruktur terbatas</strong>
+                            <p>
+                                Pengguna tidak selalu dapat mengatur
+                                seluruh konfigurasi server.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Risiko biaya</strong>
+                            <p>
+                                Biaya dapat meningkat sesuai penggunaan
+                                sumber daya dan fitur layanan.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Perlu memperhatikan keamanan</strong>
+                            <p>
+                                Developer tetap bertanggung jawab atas
+                                keamanan kode, data, dan konfigurasi
+                                yang menjadi bagiannya.
+                            </p>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- 5. PERBANDINGAN MODEL CLOUD -->
+        <section class="section section-soft" id="perbandingan">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">05 — MODEL LAYANAN</span>
+                    <h2>Perbedaan IaaS, PaaS, dan SaaS</h2>
+                    <p>
+                        Ketiga model cloud memiliki fokus dan tingkat
+                        pengelolaan yang berbeda.
+                    </p>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Aspek</th>
+                                <th>IaaS</th>
+                                <th class="highlight-column">PaaS</th>
+                                <th>SaaS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nama lengkap</td>
+                                <td>Infrastructure as a Service</td>
+                                <td class="highlight-column">
+                                    Platform as a Service
+                                </td>
+                                <td>Software as a Service</td>
+                            </tr>
+                            <tr>
+                                <td>Fokus</td>
+                                <td>Infrastruktur virtual</td>
+                                <td class="highlight-column">
+                                    Pengembangan aplikasi
+                                </td>
+                                <td>Penggunaan perangkat lunak</td>
+                            </tr>
+                            <tr>
+                                <td>Pengguna utama</td>
+                                <td>Admin sistem dan developer</td>
+                                <td class="highlight-column">
+                                    Developer
+                                </td>
+                                <td>Pengguna aplikasi</td>
+                            </tr>
+                            <tr>
+                                <td>Pengelolaan server</td>
+                                <td>
+                                    Pengguna mengelola OS dan konfigurasi
+                                    yang disediakan; penyedia mengelola
+                                    infrastruktur fisik.
+                                </td>
+                                <td class="highlight-column">
+                                    Penyedia mengelola infrastruktur
+                                    dan platform dasar.
+                                </td>
+                                <td>
+                                    Penyedia mengelola aplikasi dan
+                                    infrastruktur layanannya.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Contoh</td>
+                                <td>Amazon EC2</td>
+                                <td class="highlight-column">
+                                    Google App Engine
+                                </td>
+                                <td>Google Docs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="model-cards">
+                    <article class="model-card">
+                        <span class="model-label">IaaS</span>
+                        <h3>Infrastructure</h3>
+                        <p>
+                            Menyediakan sumber daya komputasi virtual
+                            seperti mesin virtual, jaringan, dan
+                            penyimpanan.
+                        </p>
+                    </article>
+
+                    <article class="model-card model-highlight">
+                        <span class="model-label">PaaS</span>
+                        <h3>Platform</h3>
+                        <p>
+                            Menyediakan lingkungan untuk membangun,
+                            menguji, dan menjalankan aplikasi.
+                        </p>
+                    </article>
+
+                    <article class="model-card">
+                        <span class="model-label">SaaS</span>
+                        <h3>Software</h3>
+                        <p>
+                            Menyediakan perangkat lunak siap pakai
+                            yang dapat digunakan melalui internet.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CONTOH PLATFORM -->
+        <section class="section container" id="contoh">
+            <div class="section-heading">
+                <span class="section-label">06 — CONTOH PENERAPAN</span>
+                <h2>Contoh Platform PaaS</h2>
+                <p>
+                    Berikut beberapa layanan yang menyediakan
+                    kemampuan platform untuk pengembangan atau
+                    penerapan aplikasi.
+                </p>
+            </div>
+
+            <div class="platform-grid">
+                <article class="platform-card">
+                    <div class="platform-logo google-logo">G</div>
+                    <h3>Google App Engine</h3>
+                    <p>
+                        Layanan Google Cloud untuk membangun dan
+                        menjalankan aplikasi tanpa mengelola server
+                        secara langsung.
+                    </p>
+                    <a href="https://cloud.google.com/appengine"
+                       target="_blank" rel="noopener noreferrer">
+                        Situs resmi ↗
+                    </a>
+                </article>
+
+                <article class="platform-card">
+                    <div class="platform-logo azure-logo">A</div>
+                    <h3>Azure App Service</h3>
+                    <p>
+                        Layanan Microsoft Azure untuk meng-host
+                        aplikasi web dan API dengan infrastruktur
+                        yang dikelola oleh penyedia.
+                    </p>
+                    <a href="https://azure.microsoft.com/products/app-service"
+                       target="_blank" rel="noopener noreferrer">
+                        Situs resmi ↗
+                    </a>
+                </article>
+
+                <article class="platform-card">
+                    <div class="platform-logo render-logo">R</div>
+                    <h3>Render</h3>
+                    <p>
+                        Platform cloud yang menyediakan layanan
+                        deployment untuk website, aplikasi web,
+                        API, dan layanan pendukung.
+                    </p>
+                    <a href="https://render.com/"
+                       target="_blank" rel="noopener noreferrer">
+                        Situs resmi ↗
+                    </a>
+                </article>
+
+                <article class="platform-card">
+                    <div class="platform-logo heroku-logo">H</div>
+                    <h3>Heroku</h3>
+                    <p>
+                        Platform aplikasi cloud yang mendukung
+                        proses deployment dan pengelolaan aplikasi.
+                    </p>
+                    <a href="https://www.heroku.com/"
+                       target="_blank" rel="noopener noreferrer">
+                        Situs resmi ↗
+                    </a>
+                </article>
+            </div>
+
+            <div class="note-card">
+                <strong>Perlu diketahui:</strong>
+                Tidak semua layanan hosting statis merupakan PaaS
+                dengan cakupan yang sama. Pemilihan platform perlu
+                disesuaikan dengan jenis aplikasi, kebutuhan runtime,
+                database, dan fitur yang tersedia.
+            </div>
+        </section>
+
+        <!-- KESIMPULAN -->
+        <section class="section conclusion-section" id="kesimpulan">
+            <div class="container">
+                <div class="conclusion-card">
+                    <div class="conclusion-icon">🎓</div>
+
+                    <span class="section-label">RANGKUMAN MATERI</span>
+                    <h2>Kesimpulan</h2>
+
+                    <p>
+                        Platform as a Service (PaaS) merupakan model
+                        layanan cloud computing yang menyediakan
+                        lingkungan untuk mengembangkan, menguji,
+                        menjalankan, dan mengelola aplikasi. PaaS
+                        membantu developer berfokus pada pengembangan
+                        aplikasi karena penyedia layanan menangani
+                        infrastruktur dan platform dasar.
+                    </p>
+
+                    <p>
+                        PaaS menawarkan kemudahan dan efisiensi,
+                        tetapi pengguna tetap perlu mempertimbangkan
+                        biaya, keamanan, kontrol infrastruktur, dan
+                        ketergantungan pada penyedia layanan. Oleh
+                        karena itu, PaaS perlu dipilih sesuai kebutuhan
+                        aplikasi yang dikembangkan.
+                    </p>
+
+                    <a href="#beranda" class="btn">
+                        ↑ Kembali ke Atas
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <a href="#beranda" class="brand footer-brand">
+                <span class="brand-icon">☁</span>
+                <span>Cloud<span>Learn</span></span>
+            </a>
+
+            <p>Materi Praktikum Cloud Computing</p>
+            <p>Topik: Platform as a Service (PaaS)</p>
+            <p class="footer-members">
+                Santi Kurniawati · Desi Widyawati · Annisa Kusuma Dewi
+            </p>
+            <p class="copyright">
+                © <span id="currentYear"></span> Kelompok Praktikum Cloud Computing
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
